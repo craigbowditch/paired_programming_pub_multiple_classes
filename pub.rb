@@ -20,7 +20,9 @@ class Pub
 
   end
 
-
+  def takes_money(price_of_drink)
+    @money_in_till += price_of_drink.price
+  end
 
 
 
