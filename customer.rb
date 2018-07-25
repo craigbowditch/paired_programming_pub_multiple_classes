@@ -14,8 +14,8 @@ class Customer
     return @drinks.count()
   end
 
-  def takes_drink(drink)
-    @drinks.push(drink)
+  def takes_drink(pub)
+    @drinks.push(pub.sells_drink())
   end
 
   def buys_drink(drink)

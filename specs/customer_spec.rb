@@ -32,12 +32,14 @@ class CustomerTest < MiniTest::Test
   def test_add_drink_to_customer()
     @customer1.takes_drink(@pub)
     assert_equal(1, @customer1.drinks_count())
+    assert_equal(1, @pub.drink_count())
   end
 
   def test_takes_money_from_wallet()
     @customer1.buys_drink(@drink1)
     assert_equal(12, @customer1.money)
   end
+
 
 
 

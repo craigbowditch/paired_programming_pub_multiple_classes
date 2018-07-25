@@ -15,9 +15,8 @@ class Pub
 
   end
 
-  def sells_drink(drink)
-    @drinks.delete(drink)
-
+  def sells_drink()
+    @drinks.shift()
   end
 
   def takes_money(price_of_drink)

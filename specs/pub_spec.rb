@@ -24,7 +24,7 @@ end
   end
 
   def test_gives_drink__pub_stock_goes_down()
-    @pub.sells_drink(@drink1)
+    drink = @pub.sells_drink()
     assert_equal(1, @pub.drink_count())
   end
     def test_add_drink_price_to_till()
@@ -33,7 +33,7 @@ end
     end
 
 
-  
+
 
 
 
