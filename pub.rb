@@ -1,0 +1,27 @@
+class Pub
+
+  attr_reader :name, :money_in_till
+
+  def initialize(name, money_in_till, drinks)
+
+    @name = name
+    @money_in_till = money_in_till
+    @drinks = drinks
+
+  end
+
+  def drink_count()
+    return @drinks.count()
+
+  end
+
+  def sells_drink(drink)
+    @drinks.delete(drink)
+
+  end
+
+
+
+
+
+end

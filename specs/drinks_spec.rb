@@ -7,7 +7,7 @@ class DrinksTest < MiniTest::Test
   def setup
 
     @drink1 = Drinks.new("Beer", 3)
-    @drink2 = Drinks.new("Cider", 3)
+    @drink2 = Drinks.new("Cider", 4)
     @drink3 = Drinks.new("Wine", 5)
   end
 
